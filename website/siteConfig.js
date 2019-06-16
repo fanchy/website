@@ -12,7 +12,7 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: 'fanchy',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
@@ -23,7 +23,7 @@ const users = [
 
 const siteConfig = {
   title: 'h2cloud', // Title for your website.
-  tagline: 'A website for testing',
+  tagline: 'H2Engine服务器框架',
   url: 'https://fanchy.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -55,8 +55,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#02992a',
-    secondaryColor: '#016b1d',
+    primaryColor: '#00008B',
+    secondaryColor: '#6E7B8B',
   },
 
   /* Custom fonts for website */

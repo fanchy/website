@@ -149,20 +149,21 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: 'Gate进程处理连接，Worker进程处理逻辑，<br/>经典的多进程架构进行抽象和精简，结构清晰，性能卓越',
             image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: '轻量级多进程并发',
           },
           {
-            content: 'The content of my second feature',
+            content: '核心接口c++实现，h2engine提供一个通用的脚本层，<br/>使得无论使用哪个脚本都拥有统一的接口，尽情选择你所钟爱的脚本语言。',
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: '多语言支持',
           },
         ]}
       </Block>
     );
+    
 
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
