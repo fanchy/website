@@ -92,26 +92,80 @@ class Index extends React.Component {
       </Container>
     );
 
+
+
+    const Features = () => (
+      <Block layout="fourColumn">
+        {[
+          {
+            content: 'Gate进程处理连接，Worker进程处理逻辑，<br/>经典的多进程架构进行抽象和精简，结构清晰，性能卓越',
+            image: `${baseUrl}img/bingfajiqiang.jpg`,
+            imageAlign: 'top',
+            title: '轻量级多进程并发',
+          },
+          {
+            content: '核心接口c++实现，h2engine提供一个通用的脚本层，<br/>使得无论使用哪个脚本都拥有统一的接口，尽情选择你所钟爱的脚本语言。',
+            image: `${baseUrl}img/duoyuyan.jpg`,
+            imageAlign: 'top',
+            title: '多语言支持',
+          },
+          
+        ]}
+      </Block>
+    );
+    const Features2 = () => (
+      <Block layout="fourColumn">
+        {[
+          {
+            content: 'WebSocket / Tcp binary 协议集成<br/>与client的通讯开箱即用，写个浏览器html就可以测试消息！',
+            image: `${baseUrl}img/protocol.jpg`,
+            imageAlign: 'top',
+            title: 'Websocket协议',
+          },
+          {
+            content: '集成了Mysql和Sqlite的实现，<br/>数据库连接池封装了最常用的io异步操作，io异步不阻塞主线程，吞吐量无忧。',
+            image: `${baseUrl}img/mysql.jpg`,
+            imageAlign: 'top',
+            title: 'Mysql异步io',
+          },
+          
+        ]}
+      </Block>
+    );
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>强大的Worker框架</h2>
+        <MarkdownBlock>服务器的全部逻辑都应该编写在Worker上，Gate的作用就相当于http服务的Apache，worker集成了一个非常解耦的基于事件的非侵入式框架。</MarkdownBlock>
       </div>
     );
-
+    
+    const LearnHow = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              '灵感来源于apache的cgi模式，通用的gate用来接收客户端的请求和推送消息，正因为websocket的普及，使得通用的gate得以变得可能。'+
+              'Worker进程就相当于Apache里php的角色，多进程单线程设计，worker进程封装了通用的操作如日志、数据库、定时器、事件机制等，'+
+              '其独特的模块化机制，实现了非侵入式的扩展能力。',
+            image: `${baseUrl}img/img4.jpg`,
+            imageAlign: 'right',
+            title: 'H2Engine的设计哲学',
+          },
+        ]}
+      </Block>
+    );
     const TryOut = () => (
       <Block id="try">
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              '经常会被问一句话，你的程序能撑多少人。一般官方一点的回答是这个得根据实际情况而定。实际上后台程序的性能是可以被量化的。' +
+              '我们开发的每一个服务器程序，对性能都非常有底，以为我们有数据。So，能撑多少人不少随便猜的，让数据报表来说话。',
+            image: `${baseUrl}img/xingneng.jpg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: '性能收集与分析',
           },
         ]}
       </Block>
@@ -122,48 +176,16 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+              'ffrpc使用epoll（linux下）实现的高性能异步进程间通信库，充分利用了broker分布式模式，使得进车间可以直接使用名字而不是地址'+
+              '完成通信，从而更简洁也更加scalability。默认使用thrift，也可以使用自定义格式或者pb。',
+            image: `${baseUrl}img/undraw_open_source.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'ffrpc进程间通信',
           },
         ]}
       </Block>
     );
 
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'Gate进程处理连接，Worker进程处理逻辑，<br/>经典的多进程架构进行抽象和精简，结构清晰，性能卓越',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: '轻量级多进程并发',
-          },
-          {
-            content: '核心接口c++实现，h2engine提供一个通用的脚本层，<br/>使得无论使用哪个脚本都拥有统一的接口，尽情选择你所钟爱的脚本语言。',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: '多语言支持',
-          },
-        ]}
-      </Block>
-    );
-    
 
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
@@ -199,6 +221,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
+          <Features2 />
           <FeatureCallout />
           <LearnHow />
           <TryOut />
