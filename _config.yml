@@ -1,0 +1,39 @@
+title: h2cloud
+description: > # this means to ignore newlines until "baseurl:"
+  这里分享我的一些技术相关的总结
+  游戏相关开发技术
+  人工智能等
+show_downloads: false
+
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "http://h2cloud.com" # change this to the base hostname & protocol for your site
+
+
+google_analytics:
+
+# cayman-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
+theme: # leave it empty
+
+# social
+author: Evan Zhao
+image: /thumbnail-jumbo.png
+twitter:
+  username: evanown
+github:
+  owner_name: fanchy
+  owner_url: https://github.com/fanchy
+
+plugins:
+  - jekyll-target-blank
+
+target-blank:
+    rel: nofollow
+
+header_page_refs: ['h2engine', 'fflib', 'fflua', 'ffpython', 'gamedev', 'ai', 'tech', 'about']
+excerpt_separator: <!--more-->
+#要实现 none /:categories/:title.html date /:categories/:year/:month/:day/:title.html
+permalink: /:categories/:slug.html
