@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tech
-tagline: 随意的一些心得和随笔。
+tagline: 随意的一些心得和笔记。
 permalink: /tech.html
 ref: tech
 order: 2
@@ -11,10 +11,7 @@ order: 2
 
 ## tech
 
-*   [设计](./another-page.html).
-*   [实现](./another-page.html).
-*   [文档](./another-page.html).
-
+*   [主页](/).
 
 <h2>汇总</h2>
 

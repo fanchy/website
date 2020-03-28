@@ -3,6 +3,9 @@ layout: post
 title:  LUA debug 工具函数
 categories: fflua
 tagline: 用于断点调试lua的工具函数
+tags:
+    - lua
+    - luadebug
 excerpt: >
     用于断点调试lua的工具函数
 ---

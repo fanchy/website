@@ -11,9 +11,8 @@ order: 2
 
 ## ai
 
-*   [设计](./another-page.html).
-*   [实现](./another-page.html).
-*   [文档](./another-page.html).
+
+*   [主页](/).
 
 
 <h2>汇总</h2>
