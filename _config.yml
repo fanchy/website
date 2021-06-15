@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 show_downloads: false
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "http://h2cloud.com" # change this to the base hostname & protocol for your site
+url: "https://h2cloud.org" # change this to the base hostname & protocol for your site
 
 
 google_analytics:
@@ -37,3 +37,14 @@ header_page_refs: ['h2engine', 'fflib', 'fflua', 'ffpython', 'gamedev', 'ai', 't
 excerpt_separator: <!--more-->
 #要实现 none /:categories/:title.html date /:categories/:year/:month/:day/:title.html
 permalink: /:categories/:slug.html
+
+
+valine_comment:
+  enable: true
+# app_id
+  leancloud_appid: 6jSO4XFbk0VGVYP8J0edX7gx-gzGzoHsz
+# app_key
+  leancloud_appkey: mVHg9pxj49paNoLhs6AFADcy
+# placeholde
+  placeholder: "分享你的观点"
+  

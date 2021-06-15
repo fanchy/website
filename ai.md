@@ -13,6 +13,7 @@ order: 2
 
 
 *   [主页](/).
+*   [神经网络的数学推导和Python实现](/mynnmath.html).
 
 
 <h2>汇总</h2>

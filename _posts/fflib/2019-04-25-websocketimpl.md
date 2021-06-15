@@ -144,7 +144,7 @@ Sec-WebSocket-Accept: mzjDI+C9Ekz6tc/f5gWv38L5Hu0=
 ## 数据帧
 与tcp的流式数据不同，与http相似，websocket使用帧的方式传输数据，这样解包实际上是方便的，根据长度解析消息包这个最清晰了。
 ABNF如下图所示：
-![](/assets/img/websocketimpl/websocketimpl2.png)
+![](/assets/img/websocketimpl/websocketimpl2.jpg)
 
 *	FIN：1 bit，如果不是分片，这个就是1，如果是分片，并且不是最后一个片，那么就是0
 *	RSV1, RSV2, RSV3: 每个1 bit，简单说用不到
