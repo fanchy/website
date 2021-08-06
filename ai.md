@@ -14,6 +14,7 @@ order: 2
 
 *   [主页](/).
 *   [神经网络的数学推导和Python实现](/mynnmath.html).
+*   [SVM 的数学推导和Python 实现](/svm.html).
 
 
 <h2>汇总</h2>
